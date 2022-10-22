@@ -39,7 +39,6 @@ main {
   align-items: center;
   border-radius: 20px;
   overflow: hidden;
- 
 
   .drawer {
     width: 100%;
@@ -62,11 +61,10 @@ main {
       font-size: 0.8rem;
       line-height: 1.5rem;
     }
-  }
+
     .social, .social-icons {
       background-color: red;
       padding: 1em;
-      width: 100%;
       margin-top: 2em;
       display: flex;
       justify-content: left;
@@ -105,7 +103,7 @@ main {
       background-color:hsl(217, 19%, 35%) ;
     }
   }
-
+}
 
 @media (max-width: 375px) {
   .card {
