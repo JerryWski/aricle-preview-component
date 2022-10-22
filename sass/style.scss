@@ -45,10 +45,8 @@ main {
   }
 
   &__info {
-    
-    padding: 0 2em;
-
     &--one {
+      padding: 0 2em;
       margin-top: 2em;
       color: hsl(217, 19%, 35%);
       font-weight: 700;
@@ -56,16 +54,18 @@ main {
     }
 
     &--two {
+      padding: 0 2em;
       color: hsl(214, 17%, 51%);
       margin-top: 1em;
       font-size: 0.8rem;
       line-height: 1.5rem;
     }
 
-    .social, .social-icons {
+    .social,
+    .social-icons {
       background-color: red;
       padding: 1em;
-      margin-top: 2em;
+      margin-top: 1em;
       display: flex;
       justify-content: left;
       align-items: center;
@@ -78,7 +78,7 @@ main {
 
       &__texts {
         margin-left: 1em;
-        font-size: .8rem;
+        font-size: 0.8rem;
 
         &--avatar {
           color: hsl(217, 19%, 35%);
@@ -93,14 +93,14 @@ main {
       &__btn {
         margin-left: auto;
         border-radius: 50%;
-        padding: .7em;
+        padding: 0.7em;
         border: none;
         z-index: 100;
       }
     }
 
     .social-icons {
-      background-color:hsl(217, 19%, 35%) ;
+      background-color: hsl(217, 19%, 35%);
     }
   }
 }
