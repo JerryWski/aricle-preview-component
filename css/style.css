@@ -40,7 +40,6 @@ main {
 }
 
 .card {
-  border: 1px solid red;
   background-color: #fff;
   margin: 0 1em;
   width: auto;
@@ -59,15 +58,16 @@ main {
 .card .drawer {
   width: 100%;
 }
-.card__info--one {
+.card__info .text__info {
   padding: 0 2em;
+}
+.card__info .text__info--one {
   margin-top: 2em;
   color: hsl(217deg, 19%, 35%);
   font-weight: 700;
   line-height: 1.8rem;
 }
-.card__info--two {
-  padding: 0 2em;
+.card__info .text__info--two {
   color: hsl(214deg, 17%, 51%);
   margin-top: 1em;
   font-size: 0.8rem;
