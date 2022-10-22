@@ -16,6 +16,7 @@ html {
 }
 
 body {
+  background-color: hsl(210, 46%, 95%);
   max-width: 100%;
   min-height: 100vh;
   display: flex;
@@ -29,34 +30,58 @@ main {
 }
 
 .card {
+  background-color: #fff;
   margin: 0 1em;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 30px;
+  border-radius: 20px;
   overflow: hidden;
-  border: 2px solid red;
+  
 
   .drawer {
     // display: block;
-    object-fit: fill;
+    // object-fit: fill;
     width: 100%;
   }
 
   &__info {
-    padding: 2.2em;
+    padding: 2em 2.8em;
 
     &--one {
       color: hsl(217, 19%, 35%);
       font-weight: 700;
-      font-size: 1.2rem;
       line-height: 1.8rem;
     }
 
     &--two {
       color: hsl(214, 17%, 51%);
-      margin-top: 1.5em;
+      margin-top: 1em;
+      font-size: 0.8rem;
+      line-height: 1.5rem;
+    }
+
+    .social, .social-icons {
+      max-height: 200px;
+      margin-top: 2em;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+
+      &__avatar {
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+      }
+
+      &__texts {
+        font-size: .8rem;
+      }
+
+      &__btn {
+        margin-left: auto;
+      }
     }
   }
 }
