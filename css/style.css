@@ -75,8 +75,7 @@ main {
 }
 .card__info .social,
 .card__info .social-icons {
-  background-color: red;
-  padding: 1em;
+  padding: 1em 2em;
   margin-top: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
