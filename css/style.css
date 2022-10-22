@@ -91,10 +91,21 @@ main {
   height: 45px;
 }
 .card__info .social__texts, .card__info .social-icons__texts {
+  margin-left: 1em;
   font-size: 0.8rem;
+}
+.card__info .social__texts--avatar, .card__info .social-icons__texts--avatar {
+  color: hsl(217deg, 19%, 35%);
+  font-weight: 700;
+}
+.card__info .social__texts--date, .card__info .social-icons__texts--date {
+  color: hsl(214deg, 17%, 51%);
 }
 .card__info .social__btn, .card__info .social-icons__btn {
   margin-left: auto;
+  border-radius: 50%;
+  padding: 0.7em;
+  border: none;
 }
 
 @media (max-width: 375px) {

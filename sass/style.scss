@@ -76,11 +76,24 @@ main {
       }
 
       &__texts {
+        margin-left: 1em;
         font-size: .8rem;
+
+        &--avatar {
+          color: hsl(217, 19%, 35%);
+          font-weight: 700;
+        }
+
+        &--date {
+          color: hsl(214, 17%, 51%);
+        }
       }
 
       &__btn {
         margin-left: auto;
+        border-radius: 50%;
+        padding: .7em;
+        border: none;
       }
     }
   }
