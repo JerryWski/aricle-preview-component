@@ -39,6 +39,7 @@ main {
 }
 
 .card {
+  margin: 0 1em;
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,12 +51,26 @@ main {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 30px;
-  max-height: auto;
   overflow: hidden;
+  border: 2px solid red;
 }
 .card .drawer {
+  -o-object-fit: fill;
+     object-fit: fill;
   width: 100%;
-  border: none;
+}
+.card__info {
+  padding: 2.2em;
+}
+.card__info--one {
+  color: hsl(217deg, 19%, 35%);
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+.card__info--two {
+  color: hsl(214deg, 17%, 51%);
+  margin-top: 1.5em;
 }
 
 @media (max-width: 375px) {

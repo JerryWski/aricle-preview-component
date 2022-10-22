@@ -12,7 +12,7 @@
 
 html {
   font-size: 62, 5%;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 body {
@@ -26,27 +26,42 @@ body {
 
 main {
   margin: auto;
-  
 }
 
 .card {
+  margin: 0 1em;
   width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 30px;
-  max-height: auto;
   overflow: hidden;
+  border: 2px solid red;
 
-    .drawer {
-      width: 100%;
-      border: none;
-      
+  .drawer {
+    // display: block;
+    object-fit: fill;
+    width: 100%;
+  }
+
+  &__info {
+    padding: 2.2em;
+
+    &--one {
+      color: hsl(217, 19%, 35%);
+      font-weight: 700;
+      font-size: 1.2rem;
+      line-height: 1.8rem;
     }
-  
+
+    &--two {
+      color: hsl(214, 17%, 51%);
+      margin-top: 1.5em;
+    }
+  }
 }
 
-@media (max-width:375px) {
+@media (max-width: 375px) {
   .card {
     flex-direction: column;
   }
