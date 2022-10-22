@@ -16,10 +16,11 @@ html {
   font-family: "Manrope", sans-serif;
 }
 
-body {
+main {
+  margin: auto;
   background-color: hsl(210deg, 46%, 95%);
-  max-width: 100%;
-  min-height: 100vh;
+  max-width: 1440x;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,14 +36,10 @@ body {
           flex-direction: column;
 }
 
-main {
-  margin: auto;
-}
-
 .card {
   background-color: #fff;
   margin: 0 1em;
-  width: auto;
+  width: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,8 +51,15 @@ main {
           align-items: center;
   border-radius: 20px;
   overflow: hidden;
+  max-height: 400px;
 }
-.card .drawer {
+.card picture {
+  display: block;
+  height: 100%;
+}
+.card picture .drawer {
+  min-height: 100%;
+  display: block;
   width: 100%;
 }
 .card__info .text__info {
@@ -114,17 +118,39 @@ main {
   padding: 0.7em;
   border: none;
   z-index: 100;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.card__info .social__btn:hover, .card__info .social__btn:focus,
+.card__info .social-icons__btn:hover,
+.card__info .social-icons__btn:focus {
+  scale: 1.1;
 }
 .card__info .social-icons {
   background-color: hsl(217deg, 19%, 35%);
-  gap: 30px;
+  gap: 20px;
+}
+.card__info .social-icons .share-text {
+  color: hsl(214deg, 17%, 51%);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 5px;
+}
+.card__info .social-icons .active-btn {
+  background-color: hsl(214deg, 17%, 51%);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 475px) {
   .card {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 100%;
+    width: auto;
+  }
+  .card .drawer {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
