@@ -40,6 +40,7 @@ main {
 }
 
 .card {
+  border: 1px solid red;
   background-color: #fff;
   margin: 0 1em;
   width: auto;
@@ -59,9 +60,10 @@ main {
   width: 100%;
 }
 .card__info {
-  padding: 2em 2.8em;
+  padding: 0 2em;
 }
 .card__info--one {
+  margin-top: 2em;
   color: hsl(217deg, 19%, 35%);
   font-weight: 700;
   line-height: 1.8rem;
@@ -72,8 +74,10 @@ main {
   font-size: 0.8rem;
   line-height: 1.5rem;
 }
-.card__info .social, .card__info .social-icons {
-  max-height: 200px;
+.card .social, .card .social-icons {
+  background-color: red;
+  padding: 1em;
+  width: 100%;
   margin-top: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,27 +89,31 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
-.card__info .social__avatar, .card__info .social-icons__avatar {
+.card .social__avatar, .card .social-icons__avatar {
   border-radius: 50%;
   width: 45px;
   height: 45px;
 }
-.card__info .social__texts, .card__info .social-icons__texts {
+.card .social__texts, .card .social-icons__texts {
   margin-left: 1em;
   font-size: 0.8rem;
 }
-.card__info .social__texts--avatar, .card__info .social-icons__texts--avatar {
+.card .social__texts--avatar, .card .social-icons__texts--avatar {
   color: hsl(217deg, 19%, 35%);
   font-weight: 700;
 }
-.card__info .social__texts--date, .card__info .social-icons__texts--date {
+.card .social__texts--date, .card .social-icons__texts--date {
   color: hsl(214deg, 17%, 51%);
 }
-.card__info .social__btn, .card__info .social-icons__btn {
+.card .social__btn, .card .social-icons__btn {
   margin-left: auto;
   border-radius: 50%;
   padding: 0.7em;
   border: none;
+  z-index: 100;
+}
+.card .social-icons {
+  background-color: hsl(217deg, 19%, 35%);
 }
 
 @media (max-width: 375px) {
