@@ -133,7 +133,7 @@ main {
   gap: 20px;
 }
 .card__info .social-icons .share-text {
-  color: hsl(214deg, 17%, 51%);
+  color: hsl(213deg, 11%, 63%);
   text-transform: uppercase;
   font-size: 0.9rem;
   letter-spacing: 5px;
@@ -161,5 +161,30 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: absolute;
+    border-radius: 10px;
+    gap: 10px;
+    padding: 0.7em 2em;
+    top: 48%;
+    right: 7%;
+    position: fixed;
+  }
+  .card .social-icons .share-text {
+    font-size: 0.8rem;
+  }
+  .card .social-icons .social__btn {
+    display: none;
+  }
+  .card .social-icons::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    background-color: hsl(217deg, 19%, 35%);
+    top: 30px;
+    left: 50%;
+    z-index: -100;
   }
 }/*# sourceMappingURL=style.css.map */

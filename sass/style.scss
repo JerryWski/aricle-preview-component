@@ -16,7 +16,6 @@ html {
 }
 
 
-
 main {
   margin: auto;
   background-color: hsl(210, 46%, 95%);
@@ -26,6 +25,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
 }
 
 .card {
@@ -38,6 +38,7 @@ main {
   border-radius: 20px;
   overflow: hidden;
   max-height: 450px;
+  
   
   picture {
     height: 100%;
@@ -115,7 +116,7 @@ main {
       gap: 20px;
 
       .share-text {
-        color: hsl(214, 17%, 51%);
+        color: hsl(213, 11%, 63%);
         text-transform: uppercase;
         font-size: 0.9rem;
         letter-spacing: 5px;
@@ -143,6 +144,32 @@ main {
 @media (min-width: 476px) {
   .card .social-icons {
     display: flex;
+    position: absolute;
+    border-radius: 10px;
+    gap: 10px;
+    padding: .7em 2em;
+    top: 48%;
+    right: 7%;
+    position: fixed;
     
+
+    .share-text {
+      font-size: 0.8rem;
+    }
+
+    .social__btn {
+      display: none;
+    }
+  }
+  .card .social-icons::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    transform: rotate(45deg);
+    background-color: hsl(217, 19%, 35%);
+    top: 30px;
+    left: 50%;
+    z-index: -100;
   }
 }
