@@ -131,9 +131,7 @@ main {
   scale: 1.1;
 }
 .card__info .social-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   background-color: hsl(217deg, 19%, 35%);
   gap: 20px;
 }

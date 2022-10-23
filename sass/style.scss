@@ -68,7 +68,6 @@ main {
     }
     .social,
     .social-icons {
-      
       padding: 1em 2em;
       margin-top: 1em;
       display: flex;
@@ -110,12 +109,12 @@ main {
         scale: 1.1;
       }
     }
-    .avatar-icon {
+    // .avatar-icon {
       
-    }
+    // }
 
     .social-icons {
-      display: flex;
+      display: none;
       background-color: hsl(217, 19%, 35%);
       gap: 20px;
 
