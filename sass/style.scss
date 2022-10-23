@@ -36,7 +36,7 @@ main {
   border-radius: 20px;
   overflow: hidden;
   max-height: 450px;
-  box-shadow: 0px 0px 14px 0px rgba(84, 77, 84, 1);
+  box-shadow: 0px 0px 14px 0px rgb(212, 198, 212);
 
   picture {
     height: 100%;
@@ -154,7 +154,7 @@ main {
 
     .share-text {
       font-size: 0.8rem;
-      transition: .3s ease-in-out;
+      transition: 0.3s ease-in-out;
     }
 
     .share-text:hover {
