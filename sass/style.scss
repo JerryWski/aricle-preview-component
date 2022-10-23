@@ -140,6 +140,11 @@ main {
       border-bottom-left-radius: 0px !important;
       width: auto;
     }
+
+    .social-icons {
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
   }
 }
 
@@ -147,7 +152,7 @@ main {
   .card .card__info {
     position: relative;
     .social-icons {
-      display: flex;
+      display: none;
       position: absolute;
       border-radius: 10px;
       gap: 10px;

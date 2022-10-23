@@ -160,15 +160,17 @@ main {
     border-bottom-left-radius: 0px !important;
     width: auto;
   }
+  .card .social-icons {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
 }
 @media (min-width: 689px) {
   .card .card__info {
     position: relative;
   }
   .card .card__info .social-icons {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     position: absolute;
     border-radius: 10px;
     gap: 10px;
