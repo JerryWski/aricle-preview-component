@@ -15,7 +15,6 @@ html {
   font-family: "Manrope", sans-serif;
 }
 
-
 main {
   margin: auto;
   background-color: hsl(210, 46%, 95%);
@@ -25,7 +24,6 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  
 }
 
 .card {
@@ -38,11 +36,11 @@ main {
   border-radius: 20px;
   overflow: hidden;
   max-height: 450px;
-  
-  
+  box-shadow: 0px 0px 14px 0px rgba(84, 77, 84, 1);
+
   picture {
     height: 100%;
-    
+
     .drawer {
       object-fit: cover;
       height: 100%;
@@ -147,28 +145,48 @@ main {
     position: absolute;
     border-radius: 10px;
     gap: 10px;
-    padding: .7em 2em;
+    padding: 0.7em 2em;
     top: 48%;
-    right: 7%;
+    right: 16%;
     position: fixed;
-    
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 
     .share-text {
       font-size: 0.8rem;
+      transition: .3s ease-in-out;
+    }
+
+    .share-text:hover {
+      font-size: 0.8rem;
+      color: #fff;
+      scale: 1.1;
     }
 
     .social__btn {
       display: none;
     }
+    img {
+      transition: all 0.3s ease-in-out;
+    }
+    img:hover {
+      scale: 1.2;
+    }
   }
+
+  .card .social-icons:hover {
+    scale: 1.4;
+  }
+
   .card .social-icons::after {
     content: "";
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     position: absolute;
     transform: rotate(45deg);
-    background-color: hsl(217, 19%, 35%);
+    background-color: inherit;
     top: 30px;
+    border: none;
     left: 50%;
     z-index: -100;
   }
