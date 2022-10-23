@@ -39,7 +39,7 @@ main {
 .card {
   background-color: #fff;
   margin: 0 1em;
-  max-width: 700px;
+  max-width: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,7 +159,10 @@ main {
   }
 }
 @media (min-width: 476px) {
-  .card .social-icons {
+  .card .card__info {
+    position: relative;
+  }
+  .card .card__info .social-icons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -167,37 +170,37 @@ main {
     border-radius: 10px;
     gap: 10px;
     padding: 0.7em 2em;
-    top: 48%;
-    right: 16%;
-    position: fixed;
+    top: 50%;
+    right: -10%;
     cursor: pointer;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    z-index: 10;
   }
-  .card .social-icons .share-text {
+  .card .card__info .social-icons .share-text {
     font-size: 0.8rem;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
   }
-  .card .social-icons .share-text:hover {
+  .card .card__info .social-icons .share-text:hover {
     font-size: 0.8rem;
     color: #fff;
     scale: 1.1;
   }
-  .card .social-icons .social__btn {
+  .card .card__info .social-icons .social__btn {
     display: none;
   }
-  .card .social-icons img {
+  .card .card__info .social-icons img {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  .card .social-icons img:hover {
+  .card .card__info .social-icons img:hover {
     scale: 1.2;
   }
-  .card .social-icons:hover {
-    scale: 1.4;
+  .card .card__info .social-icons:hover {
+    scale: 1.2;
   }
-  .card .social-icons::after {
+  .card .card__info .social-icons::after {
     content: "";
     width: 18px;
     height: 18px;

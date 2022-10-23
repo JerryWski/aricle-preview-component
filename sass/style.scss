@@ -29,7 +29,7 @@ main {
 .card {
   background-color: #fff;
   margin: 0 1em;
-  max-width: 700px;
+  max-width: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,54 +140,58 @@ main {
 }
 
 @media (min-width: 476px) {
-  .card .social-icons {
-    display: flex;
-    position: absolute;
-    border-radius: 10px;
-    gap: 10px;
-    padding: 0.7em 2em;
-    top: 48%;
-    right: 16%;
-    position: fixed;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
 
-    .share-text {
-      font-size: 0.8rem;
-      transition: 0.3s ease-in-out;
-    }
-
-    .share-text:hover {
-      font-size: 0.8rem;
-      color: #fff;
-      scale: 1.1;
-    }
-
-    .social__btn {
-      display: none;
-    }
-    img {
+  .card .card__info {
+    position: relative;
+    .social-icons {
+      display: flex;
+      position: absolute;
+      border-radius: 10px;
+      gap: 10px;
+      padding: 0.7em 2em;
+      top: 50%;
+      right: -10%;
+      cursor: pointer;
       transition: all 0.3s ease-in-out;
+      z-index: 10;
+
+      .share-text {
+        font-size: 0.8rem;
+        transition: 0.3s ease-in-out;
+      }
+
+      .share-text:hover {
+        font-size: 0.8rem;
+        color: #fff;
+        scale: 1.1;
+      }
+
+      .social__btn {
+        display: none;
+      }
+      img {
+        transition: all 0.3s ease-in-out;
+      }
+      img:hover {
+        scale: 1.2;
+      }
     }
-    img:hover {
+
+    .social-icons:hover {
       scale: 1.2;
     }
-  }
 
-  .card .social-icons:hover {
-    scale: 1.4;
-  }
-
-  .card .social-icons::after {
-    content: "";
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    transform: rotate(45deg);
-    background-color: inherit;
-    top: 30px;
-    border: none;
-    left: 50%;
-    z-index: -100;
+    .social-icons::after {
+      content: "";
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      transform: rotate(45deg);
+      background-color: inherit;
+      top: 30px;
+      border: none;
+      left: 50%;
+      z-index: -100;
+    }
   }
 }
