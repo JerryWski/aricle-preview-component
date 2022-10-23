@@ -110,6 +110,10 @@ main {
       }
     }
 
+    .active {
+      display: flex;
+    }
+
     .social-icons {
       display: none;
       background-color: hsl(217, 19%, 35%);
@@ -200,6 +204,10 @@ main {
       border: none;
       left: 50%;
       z-index: -100;
+    }
+
+    .avatar-icon {
+      display: flex;
     }
   }
 }

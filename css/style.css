@@ -130,6 +130,11 @@ main {
 .card__info .social-icons__btn:focus {
   scale: 1.1;
 }
+.card__info .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .card__info .social-icons {
   display: none;
   background-color: hsl(217deg, 19%, 35%);
@@ -217,5 +222,10 @@ main {
     border: none;
     left: 50%;
     z-index: -100;
+  }
+  .card .card__info .avatar-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }/*# sourceMappingURL=style.css.map */
