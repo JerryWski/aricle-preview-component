@@ -39,7 +39,7 @@ main {
 .card {
   background-color: #fff;
   margin: 0 1em;
-  width: 800px;
+  max-width: 700px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,15 +51,15 @@ main {
           align-items: center;
   border-radius: 20px;
   overflow: hidden;
-  max-height: 400px;
+  max-height: 450px;
 }
 .card picture {
-  display: block;
   height: 100%;
 }
 .card picture .drawer {
-  min-height: 100%;
-  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
   width: 100%;
 }
 .card__info .text__info {
@@ -147,10 +147,11 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 100%;
+    height: auto;
     width: auto;
+    max-height: 100%;
   }
   .card .drawer {
-    width: 100%;
+    width: auto;
   }
 }/*# sourceMappingURL=style.css.map */
