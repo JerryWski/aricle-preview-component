@@ -207,6 +207,9 @@ main {
   .card .card__info .social-icons img:hover {
     scale: 1.2;
   }
+  .card .card__info .social-icons.visible {
+    visibility: visible;
+  }
   .card .card__info .social-icons:hover {
     scale: 1.2;
   }

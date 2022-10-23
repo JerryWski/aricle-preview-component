@@ -193,6 +193,10 @@ main {
       }
     }
 
+    .social-icons.visible {
+      visibility: visible;
+    }
+
     .social-icons:hover {
       scale: 1.2;
     }
