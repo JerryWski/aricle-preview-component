@@ -110,6 +110,7 @@ main {
     }
 
     .social-icons {
+      display: none;
       background-color: hsl(217, 19%, 35%);
       gap: 20px;
 
@@ -139,3 +140,9 @@ main {
   }
 }
 
+@media (min-width: 476px) {
+  .card .social-icons {
+    display: flex;
+    
+  }
+}
