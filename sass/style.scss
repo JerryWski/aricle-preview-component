@@ -68,6 +68,7 @@ main {
     }
     .social,
     .social-icons {
+      
       padding: 1em 2em;
       margin-top: 1em;
       display: flex;
@@ -109,13 +110,12 @@ main {
         scale: 1.1;
       }
     }
-
-    .active {
-      display: flex;
+    .avatar-icon {
+      
     }
 
     .social-icons {
-      display: none;
+      display: flex;
       background-color: hsl(217, 19%, 35%);
       gap: 20px;
 
@@ -155,6 +155,11 @@ main {
 @media (min-width: 689px) {
   .card .card__info {
     position: relative;
+
+    .social {
+      display: flex !important;
+    }
+
     .social-icons {
       display: none;
       position: absolute;
@@ -206,8 +211,5 @@ main {
       z-index: -100;
     }
 
-    .avatar-icon {
-      display: flex;
-    }
   }
 }

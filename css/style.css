@@ -130,13 +130,10 @@ main {
 .card__info .social-icons__btn:focus {
   scale: 1.1;
 }
-.card__info .active {
+.card__info .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-.card__info .social-icons {
-  display: none;
   background-color: hsl(217deg, 19%, 35%);
   gap: 20px;
 }
@@ -173,6 +170,11 @@ main {
 @media (min-width: 689px) {
   .card .card__info {
     position: relative;
+  }
+  .card .card__info .social {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
   .card .card__info .social-icons {
     display: none;
@@ -222,10 +224,5 @@ main {
     border: none;
     left: 50%;
     z-index: -100;
-  }
-  .card .card__info .avatar-icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }/*# sourceMappingURL=style.css.map */
