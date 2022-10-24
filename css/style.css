@@ -175,6 +175,7 @@ main {
     display: flex !important;
   }
   .card .card__info .social-icons {
+    opacity: 1;
     display: none;
     position: absolute;
     border-radius: 10px;

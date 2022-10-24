@@ -2,7 +2,6 @@ const socialBarAvatar = document.querySelector(".social");
 const socialBarIcons = document.querySelector(".social-icons");
 const shareBtn = document.querySelector(".social__btn");
 const shareBtnTwo = document.querySelector(".active-btn");
-console.log(shareBtnTwo);
 
 const toggleHandler = () => {
   socialBarAvatar.style.display = "none";
